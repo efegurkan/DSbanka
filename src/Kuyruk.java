@@ -4,16 +4,24 @@ public class Kuyruk {
 	
 	public int boyut;
 	public ArrayList<Musteri> banka_kuyruk;
-	public int elemansay;
+	
 	public int[] bekleme_suresi;
 	public int[] bekleme_suresi_oncelik;
 	public double ort_sure;
+	
+	public Kuyruk(int sayi,int l){
+		banka_kuyruk=new ArrayList<Musteri>();
+        boyut=0;
+	    bekleme_suresi=new int[sayi];
+		bekleme_suresi_oncelik=new int[sayi];
+	}
+	
 	public Kuyruk(int kisi_say){
 		
 		
 		banka_kuyruk=new ArrayList<Musteri>();
 		boyut=kisi_say;
-		elemansay=0;
+		
 		bekleme_suresi=new int[boyut];
 		bekleme_suresi_oncelik=new int[boyut];
 		
@@ -33,9 +41,11 @@ public class Kuyruk {
 		}
 	}
 	
-	/*public void tekli_ekle(){
-		Musteri birMusteri
-	}*/
+	public void tekli_ekle(int k){
+		Musteri birMusteri=new Musteri(k);
+		banka_kuyruk.add(birMusteri);
+		boyut++;
+	}
 	
 	public void yazdir(){
 		int toplam_sure=0;
