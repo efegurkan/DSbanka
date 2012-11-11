@@ -21,7 +21,7 @@ public class BankaKuyrugu {
 			 	case 1:
 			 	{
 			 		
-					System.out.println("Kuyruða eklenecek eleman sayýsýný giriniz:");
+					System.out.println("Kuyruga eklenecek eleman sayisini giriniz:");
 					int n=in.nextInt();
 					System.out.println("\n\n");
 			 		Kuyruk Banka=new Kuyruk(n);
@@ -49,11 +49,11 @@ public class BankaKuyrugu {
 	{
 		int secim;
 		
-		System.out.println("1) FIFO kuyruðu ve öncelik kuyruðu oluþturma");
-		System.out.println("2) 3 adet FIFO ve öncelik kuyruðu oluþturup zaman kýyaslama");
-		System.out.println("3) Çýkýþ");
+		System.out.println("1) FIFO kuyrugu ve oncelik kuyruï¿½u oluï¿½turma");
+		System.out.println("2) 3 adet FIFO ve ï¿½ncelik kuyruï¿½u oluï¿½turup zaman kï¿½yaslama");
+		System.out.println("3) ï¿½ï¿½kï¿½ï¿½");
 		System.out.println();
-		System.out.println("Seçiminizi giriniz:");
+		System.out.println("Seï¿½iminizi giriniz:");
 		Scanner in = new Scanner(System.in);
 		secim=in.nextInt();
 		
@@ -62,7 +62,7 @@ public class BankaKuyrugu {
 	
 	public static void gise_olusturma(){
 		Scanner in=new Scanner(System.in);
-		System.out.println("Kuyruða eklenecek eleman sayýsýný giriniz:");
+		System.out.println("Kuyruï¿½a eklenecek eleman sayï¿½sï¿½nï¿½ giriniz:");
 		int n=in.nextInt();
 		int x=0;
 		
@@ -88,13 +88,13 @@ public class BankaKuyrugu {
  			
  		    
  		}
- 		System.out.println("1. GÝÞE");
+ 		System.out.println("1. Gï¿½ï¿½E");
  		kuyruk1.yazdir();
  		System.out.println("\n\n");
- 		System.out.println("2. GÝÞE");
+ 		System.out.println("2. Gï¿½ï¿½E");
  		kuyruk2.yazdir();
  		System.out.println("\n\n");
- 		System.out.println("3. GÝÞE");
+ 		System.out.println("3. Gï¿½ï¿½E");
  		kuyruk3.yazdir();
  		System.out.println("\n\n");
 	}
